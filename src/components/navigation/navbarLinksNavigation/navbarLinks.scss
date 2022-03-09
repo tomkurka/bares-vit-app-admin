@@ -1,0 +1,44 @@
+@import "../../../styles/styles.scss";
+
+.navbar-links-container {
+  @include flex-center-column();
+  align-items: flex-start;
+  padding-top: 45px;
+  padding: 10px;
+  width: 100%;
+  gap: 20px;
+
+  .link-container {
+    @include flex-flexStart-center();
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    gap: 20px;
+
+    .link-text {
+      display: none;
+      font-size: 18px;
+      font-weight: 600;
+      color: $color-light-2;
+    }
+    .link-icon {
+      fill: $color-light-2;
+      width: 35px;
+      height: 35px;
+      &.active {
+        fill: $color-gold-1;
+      }
+    }
+    &.active,
+    &:hover {
+      background: $color-gold-1;
+      .link-icon {
+        fill: $color-dark-2;
+      }
+      .link-text {
+        color: $color-dark-2;
+      }
+    }
+  }
+}

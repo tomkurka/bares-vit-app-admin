@@ -1,0 +1,51 @@
+@import "./colors.scss";
+@import "./sizes.scss";
+
+button {
+  outline: none;
+  font-family: Poppins, sans-serif;
+}
+
+.btn {
+  border: none;
+}
+
+.btn-custom {
+  background: $color-gold-1;
+  color: $color-dark-2;
+  font-size: $size-m;
+  padding: 0.8em 1em;
+  font-weight: 600;
+  border-radius: 0.4em;
+}
+
+.btn-edit {
+  background: $color-light-2;
+  color: $color-dark-3;
+  font-size: $size-m;
+  padding: 0.5em 1em;
+  font-weight: 600;
+  font-size: $size-s;
+  border-radius: 0.3em;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background: $color-gold-1;
+    color: $color-light-1;
+  }
+}
+
+.btn-icon {
+  background: $color-light-2;
+  fill: $color-dark-2;
+  height: $size-xl;
+  width: $size-xl;
+  padding: 0.3em;
+  border-radius: 0.3em;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background: $color-gold-1;
+    fill: $color-light-1;
+  }
+}

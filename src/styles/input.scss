@@ -1,0 +1,20 @@
+@import "./colors.scss";
+@import "./sizes.scss";
+
+input {
+  outline: none;
+  font-family: Poppins, sans-serif;
+}
+
+.input-edit {
+  border-radius: 6px;
+  border: 2px solid $color-light-2;
+  font-size: $size-s;
+  width: 250px;
+  outline: none;
+  padding: 0.5em;
+  &:focus,
+  &:active {
+    border: 2px solid $color-light-2;
+  }
+}

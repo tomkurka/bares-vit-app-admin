@@ -1,0 +1,14 @@
+@import "../../../styles/styles.scss";
+.form-sign {
+  @include flex-center-center-column();
+  width: 450px;
+  gap: 25px;
+  padding: 25px;
+  border-radius: 20px;
+  background: $color-dark-3;
+  box-shadow: $box-shadow-medium;
+  h3 {
+    font-size: $size-xl;
+    margin: 10px;
+  }
+}

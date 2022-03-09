@@ -1,0 +1,26 @@
+@import "../../../styles/styles.scss";
+
+.input-block {
+  @include flex-center-flexStart-column();
+  width: 100%;
+  gap: 5px;
+
+  p {
+    margin: 0;
+    font-size: $size-xs;
+  }
+
+  input {
+    border: 2px solid $color-dark-2;
+    background: $color-dark-3;
+    border-radius: 8px;
+    color: $color-light-1;
+    font-size: $size-s;
+    padding: 0.8em;
+    width: 100%;
+    outline: none;
+    &:focus {
+      border: 2px solid $color-light-2;
+    }
+  }
+}

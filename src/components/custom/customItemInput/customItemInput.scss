@@ -1,0 +1,51 @@
+@import "../../../styles/styles.scss";
+
+.custom-item-input {
+  @include flex-center-flexStart-column();
+  width: 100%;
+  gap: 5px;
+
+  p {
+    margin: 0;
+    font-size: $size-xs;
+  }
+
+  .items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: $color-dark-3;
+    font-size: $size-s;
+    gap: 15px;
+    border-radius: 8px;
+    padding: 1em;
+    border: 2px solid $color-light-2;
+
+    .item {
+      @include flex-center-center();
+      background: $color-gold-1;
+      color: $color-dark-2;
+      font-size: $size-s;
+      padding: 0.4em 0.8em;
+      border-radius: 0.3em;
+      font-weight: 600;
+      gap: 0.7em;
+      .icon {
+        width: 1.5em;
+        cursor: pointer;
+        fill: $color-light-1;
+        border-radius: 50%;
+        fill: $color-dark-2;
+      }
+    }
+
+    input {
+      font-size: $size-s;
+      padding: 0;
+      border: none;
+      width: 200px;
+      background: transparent;
+      color: $color-light-1;
+    }
+  }
+}

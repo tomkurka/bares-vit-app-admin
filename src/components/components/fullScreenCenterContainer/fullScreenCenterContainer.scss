@@ -1,0 +1,8 @@
+@import "../../../styles/styles.scss";
+
+.full-screen-center-container {
+  @include flex-center-center-column();
+  width: 100%;
+  min-height: 100vh;
+  padding: 25px;
+}

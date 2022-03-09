@@ -1,0 +1,7 @@
+@import "../../../styles/styles.scss";
+.post-edit-data {
+  @include flex-center-flexStart-column();
+  padding: 20px 0;
+  width: 100%;
+  gap: 20px;
+}

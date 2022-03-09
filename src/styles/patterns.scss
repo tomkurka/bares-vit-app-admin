@@ -1,0 +1,11 @@
+@mixin sidePattern {
+  &::before {
+    content: "LOVE - GAME - ENJOY - PLAY - DISCOVER - CHANGE";
+    position: fixed;
+    bottom: calc(50% - 40px);
+    right: -260px;
+    letter-spacing: 4px;
+    transform: rotate(-90deg);
+    color: $color-light-2;
+  }
+}

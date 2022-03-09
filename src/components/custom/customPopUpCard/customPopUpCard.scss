@@ -1,0 +1,61 @@
+@import "../../../styles/styles.scss";
+
+.custom-pop-up-card-background-layer {
+  position: fixed;
+  z-index: 50000;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.24);
+  @include flex-center-center();
+  cursor: pointer;
+  .custom-pop-up-card {
+    cursor: auto;
+    @include flex-center-center-column();
+    gap: 25px;
+    background: $color-dark-2;
+    padding: 30px;
+    box-shadow: $box-shadow-medium;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 550px;
+    h5 {
+      font-size: $size-xl;
+      text-align: center;
+      margin: 0;
+    }
+    p {
+      margin: 0;
+      color: $color-dark-3;
+      background: $color-light-2;
+      border-radius: 8px;
+      padding: 15px;
+    }
+    .buttons {
+      @include flex-center-center();
+      gap: 25px;
+      width: 100%;
+      button {
+        outline: none;
+        border: none;
+        padding: 0.6em;
+        width: 100%;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: $size-m;
+        font-weight: 600;
+        background: $color-gold-1;
+        color: $color-dark-2;
+        &.danger {
+          background: $color-dark-3;
+          color: $color-light-1;
+          &:hover {
+            background: $color-gold-1;
+            color: $color-dark-2;
+          }
+        }
+      }
+    }
+  }
+}

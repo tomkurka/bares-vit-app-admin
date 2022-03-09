@@ -1,0 +1,15 @@
+@import "../../../styles/styles.scss";
+
+.btn-custom {
+  background: $color-gold-1;
+  color: $color-light-1;
+  font-size: $size-m;
+  padding: 0.5em 1em;
+  font-weight: 600;
+  border-radius: 0.4em;
+  cursor: pointer;
+  &:hover,
+  .active {
+    background: $color-gold-1;
+  }
+}

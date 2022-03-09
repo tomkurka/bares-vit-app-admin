@@ -1,0 +1,21 @@
+@import "../../../styles/styles.scss";
+
+.post-preview-new {
+  @include flex-center-center();
+  box-shadow: $box-shadow-medium;
+  border-radius: 8px;
+  cursor: pointer;
+  background: $color-dark-3;
+
+  &:hover {
+    background: $color-gold-1;
+    .icon {
+      fill: $color-dark-3;
+    }
+  }
+
+  .icon {
+    height: 125px;
+    fill: $color-gold-1;
+  }
+}

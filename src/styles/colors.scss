@@ -1,0 +1,16 @@
+$color-gold-1: #f3b029;
+
+$color-light-1: #e5e5e5;
+$color-light-2: #eedab0;
+
+$color-dark-1: #000000;
+$color-dark-2: #17181d;
+$color-dark-3: #292c35;
+
+$box-shadow-medium: #00000033 0px 8px 24px;
+$box-shadow-medium-color: #00000033;
+
+@mixin img-box-shadow {
+  -webkit-filter: drop-shadow(8px 8px 20px rgba(170, 151, 151, 0.7));
+  filter: drop-shadow(8px 8px 20px rgba(0, 0, 0, 0.7));
+}
